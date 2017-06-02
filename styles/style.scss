@@ -19,23 +19,33 @@ body{
   justify-content: center;
   padding: 20px;
 }
-
+.graphic1{
+  width: 90%;
+  height: 90%;
+}
 .gatico{
   // ESTA CLASE SE ELIMINA CON INSERCIÓN DE MAPA DE MARIA
   width: 90%;
   height: 90%;
 }
-
 .index-card0{
-  background-color: white;
-  width: 95%;
+    background-color: white;
+    width: 95%;
+}
+.secondariesArticles{
+  width: 100%;
+}
+
+.index-card0, .secondariesArticles{
+
+
   border:0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-bottom: 40px;
 }
-.index-card-top0{
+.index-card-top0, .index-card-top{
   text-align: center;
   background-color: #44582c;
   color: white;
@@ -53,14 +63,39 @@ body{
   background-color: white;
   width: 95%;
   border:0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.articleLink {
+  text-decoration: none;
+  color: #294705;
+}
+.article-title{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 0;
 }
 
-.index-card-top{
-  text-align: center;
-  background-color: #44582c;
-  color: white;
+
+
+// responsive
+
+@media (min-width : 760px) {
+
+.secondariesArticles{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: stretch;
+height: auto;
+
+}
+.index-card{
+width: 45%;
+}
+
+
+
+
 }
