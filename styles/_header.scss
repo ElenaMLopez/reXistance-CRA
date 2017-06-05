@@ -1,0 +1,128 @@
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  width: 100%;
+  background-image: url(../images/header_1_1600x225.jpg);
+}
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title{
+  width: 100%;
+  text-align: center;
+}
+
+.brand {
+  max-width: 100%;
+}
+.ppalTitle{
+  font-size: 20px;
+  color: $letter-color;
+  text-align: center;
+
+}
+.btn-menu{
+  border: none;
+  background-color: transparent;
+  padding: 8px;
+  width: 80px;
+  outline: none;
+  cursor:pointer;
+}
+.btn-menu-icon {
+  max-width: 100%;
+}
+.nav,
+.column-transparent{
+  display: none;
+}
+
+.nav-small{
+  list-style: none;
+  padding-left: 5px;
+  padding-right: 5px;
+  position: absolute;
+  background-color: $color;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  top: 100%;
+  animation: nav-small 0.50s linear 0s;
+}
+
+@keyframes nav-small {
+  0% {
+    -webkit-transform: translateY(150%);
+    transform: translateY(-150%); }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0); }
+    }
+
+    .nav-small-link{
+      text-decoration: none;
+      text-transform: uppercase;
+      color: $letter-color;
+      width: 100%;
+      display: block;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      margin-right: 6px;
+    }
+    .nav-small-item{
+      border-bottom: 1px solid $secondary-color;
+    }
+    .nav-small-item:last-child{
+      border-bottom: none;
+    }
+    .hide {
+      display: none;
+    }
+    @media (min-width: 760px) {
+      .header {
+        position: relative;
+        height: 220px;
+      }
+      .main-container {
+        display: flex;
+      }
+      .title{
+        height: 220px;
+        text-align: center;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .ppalTitle{
+        font-size: 55px;
+      }
+      .btn-menu{
+        display: none;
+      }
+      .column-transparent{
+        display: flex;
+        min-width: 204px;
+        background-color: rgba(143, 178, 101, 0.72);
+      }
+      .nav{
+        position: fixed;
+        right: 3px;
+        top: 220px;
+        display: inline-flex;
+        flex-direction: column;
+        list-style: none;
+        background-color: $color;
+        margin: 0;
+        padding: 20px;
+      }
+
+      ul li:hover a {
+        background: $secondary-color;
+        color: black;
+      }
+    }
