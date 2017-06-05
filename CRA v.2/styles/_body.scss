@@ -1,19 +1,26 @@
-*{
+* {
   box-sizing: border-box;
 }
+
 body{
   margin:0;
-  background-color: #8fb265;
   font-family: 'Montserrat', sans-serif;
 }
 
-.contenedor{
+.container{
+  position: relative;
+  z-index: 1;
+  top: 65px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 20px;
 }
-
+.blank{
+  position: relative;
+  height: 0;
+  bottom: 75px;
+}
 .map{
   display: flex;
   justify-content: center;
@@ -29,17 +36,14 @@ body{
   height: 90%;
 }
 .index-card0{
-    background-color: white;
-    width: 95%;
+  width: 95%;
+  border: 1px solid $secondary-color;
 }
 .secondariesArticles{
   width: 100%;
 }
 
 .index-card0, .secondariesArticles{
-
-
-  border:0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -47,29 +51,24 @@ body{
 }
 .index-card-top0, .index-card-top{
   text-align: center;
-  background-color: #44582c;
-  color: white;
+  background-color: $secondary-color;
+  color: $letter-color;
 }
 
 .article{
   padding: 10px 45px 10px 45px;
 }
 
-.paragraph{
-  padding-top: 40px;
-}
-
 .index-card{
-  background-color: white;
   width: 95%;
-  border:0;
   margin-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
+  border: 1px solid $secondary-color;
 }
 .articleLink {
   text-decoration: none;
-  color: #294705;
+  color: $secondary-color;
 }
 .article-title{
   padding-top: 10px;
@@ -77,25 +76,30 @@ body{
   margin-top: 0;
 }
 
-
-
-// responsive
-
 @media (min-width : 760px) {
 
-.secondariesArticles{
-display: flex;
-flex-direction: row;
-justify-content: space-around;
-align-items: stretch;
-height: auto;
+  .container{
+    position: relative;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .blank{
+    position: relative;
+    height: 0;
+    bottom: 0;
+  }
+  .secondariesArticles{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    height: auto;
 
-}
-.index-card{
-width: 45%;
-}
-
-
-
-
+  }
+  .index-card{
+    width: 45%;
+  }
 }
