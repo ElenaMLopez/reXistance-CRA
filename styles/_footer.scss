@@ -1,0 +1,48 @@
+footer{
+  width: 100% ;
+  bottom: 0px;
+  padding: 40px;
+  background-color: #8FB265 ;
+
+}
+
+.footercopy{
+ text-align: center;
+ }
+.iconos{
+  width: 60px;
+  padding-right: 15px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+
+}
+
+.colaboradores{
+  border-radius: 49px 49px 49px 49px;
+  -webkit-border-radius: 49px 49px 49px 49px;
+  border: 0px solid #000000 ;
+   padding-top: 20px;
+  background-color: rgb(166, 226, 172); opacity: 0.5;
+  text-align: center;
+  display: flex;
+  text-decoration: none;
+
+}
+
+.equipo{
+  width: 50%;
+
+}
+.agradecimientos{
+  width: 40%;
+
+}
+a{
+  color: rgb(2, 20, 2); text-decoration: none
+}
+a:link{
+  text-decoration: none;
+}
+a:hover{
+  color: white; text-decoration: underline;
+}
