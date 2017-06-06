@@ -334,31 +334,31 @@ ul li:hover a {
   cursor: pointer; }
 
 #castillaLeon path:hover {
-  fill: #8FB265; }
+  fill: #8fb265; }
 
 #extremadura {
   fill: #DBE4A0;
   cursor: pointer; }
 
 #extremadura path:hover {
-  fill: #8FB265; }
+  fill: #8fb265; }
 
 #castillaMancha {
   fill: #EAEBA3;
   cursor: pointer; }
 
 #castillaMancha path:hover {
-  fill: #8FB265; }
+  fill: #8fb265; }
 
 .selected {
-  fill: #8FB265; }
+  fill: #8fb265; }
 
 #aragon {
   fill: #D2E3BD;
   cursor: pointer; }
 
 #aragon path:hover {
-  fill: #8FB265; }
+  fill: #8fb265; }
 
 text {
   cursor: pointer; }

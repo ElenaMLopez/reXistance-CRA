@@ -71,7 +71,7 @@
   cursor: pointer;
 }
 #castillaLeon path:hover{
-  fill: #8FB265;
+  fill: $color;
 }
 
 
@@ -80,7 +80,7 @@
   cursor: pointer;
 }
 #extremadura path:hover{
-  fill: #8FB265;
+  fill: $color;
 }
 
 #castillaMancha {
@@ -88,10 +88,10 @@
   cursor: pointer;
 }
 #castillaMancha path:hover{
-  fill: #8FB265;
+  fill: $color;
 }
 .selected {
-  fill: #8FB265;
+  fill: $color;
 }
 
 #aragon {
@@ -99,7 +99,7 @@
   cursor: pointer;
 }
 #aragon path:hover{
-  fill: #8FB265;
+  fill: $color;
 }
 text {
   cursor: pointer;
