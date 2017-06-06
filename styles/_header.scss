@@ -82,6 +82,10 @@
     .hide {
       display: none;
     }
+    ul li:hover a {
+      background: $secondary-color;
+    }
+
     @media (min-width: 760px) {
       .header {
         position: relative;
@@ -120,9 +124,5 @@
         margin: 0;
         padding: 20px;
       }
-
-      ul li:hover a {
-        background: $secondary-color;
-        color: black;
-      }
+      
     }

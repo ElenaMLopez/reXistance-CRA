@@ -1,0 +1,124 @@
+#modal.hide {
+  display: none;
+}
+#modal.animationModal {
+  transform: scale(1);
+}
+.closeModal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 15px;
+  height: auto;
+  cursor: pointer;
+}
+.map{
+  position: relative;
+}
+#completeMap {
+
+  width: 100%;
+  height: auto;
+  font-size: 11px;
+
+}
+#modal {
+  width: 100%;
+  display:flex;
+  flex-direction: row;
+  height: auto;
+  background-color: #e6eedd;
+  position: relative;
+}
+#modal .containerImageChild{
+
+  flex:0 0 25%;
+  height: auto;
+  align-self:flex-start;
+  max-width: 150px;
+  margin-top: 10px;
+
+}
+
+#modal .containerImageChild .child{
+  width:100%;
+  height: auto;
+
+}
+
+#modal .information{
+  flex:0 0 75%;
+  height: auto;
+  padding-right: 20px;
+  padding-bottom: 20px;
+
+}
+#modal h2 {
+  text-transform: capitalize;
+  margin-bottom: 7px;
+}
+#modal p {
+  margin: 7px 0;
+}
+
+#modal p.infoModal{
+  margin: 7px 0;
+  font-size: 12px;
+}
+
+#castillaLeon {
+  fill: #CFE9AF;
+  cursor: pointer;
+}
+#castillaLeon path:hover{
+  fill: #8FB265;
+}
+
+
+#extremadura {
+  fill: #DBE4A0;
+  cursor: pointer;
+}
+#extremadura path:hover{
+  fill: #8FB265;
+}
+
+#castillaMancha {
+  fill: #EAEBA3;
+  cursor: pointer;
+}
+#castillaMancha path:hover{
+  fill: #8FB265;
+}
+.selected {
+  fill: #8FB265;
+}
+
+#aragon {
+  fill: #D2E3BD;
+  cursor: pointer;
+}
+#aragon path:hover{
+  fill: #8FB265;
+}
+text {
+  cursor: pointer;
+}
+#madrid {
+  fill: #C3DEA4;
+}
+@media (min-width: 760px) {
+  #modal {
+    position: absolute;
+    max-width: 320px;
+    background-color: rgba(230, 238, 221, 0.8);
+    border-radius: 10px;
+    overflow: hidden;
+    transform: scale(0);
+    transition: all 1s;
+  }
+  #completeMap {
+    font-size: 8px;
+
+  }
+}

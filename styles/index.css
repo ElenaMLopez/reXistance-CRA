@@ -27,20 +27,7 @@ body {
   height: 0;
   bottom: 75px; }
 
-.map {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-bottom: 60px; }
-
-.graphic1 {
-  width: 90%;
-  height: 90%; }
-
-.gatico {
+.graphic {
   width: 90%;
   height: 90%; }
 
@@ -218,6 +205,9 @@ body {
 .hide {
   display: none; }
 
+ul li:hover a {
+  background: #44582c; }
+
 @media (min-width: 760px) {
   .header {
     position: relative;
@@ -269,10 +259,126 @@ body {
     list-style: none;
     background-color: #8fb265;
     margin: 0;
-    padding: 20px; }
+    padding: 20px; } }
+#modal.hide {
+  display: none; }
 
-  ul li:hover a {
-    background: #44582c;
-    color: black; } }
+#modal.animationModal {
+  -webkit-transform: scale(1);
+          transform: scale(1); }
+
+.closeModal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 15px;
+  height: auto;
+  cursor: pointer; }
+
+.map {
+  position: relative; }
+
+#completeMap {
+  width: 100%;
+  height: auto;
+  font-size: 11px; }
+
+#modal {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: auto;
+  background-color: #e6eedd;
+  position: relative; }
+
+#modal .containerImageChild {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+  height: auto;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  max-width: 150px;
+  margin-top: 10px; }
+
+#modal .containerImageChild .child {
+  width: 100%;
+  height: auto; }
+
+#modal .information {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 75%;
+          flex: 0 0 75%;
+  height: auto;
+  padding-right: 20px;
+  padding-bottom: 20px; }
+
+#modal h2 {
+  text-transform: capitalize;
+  margin-bottom: 7px; }
+
+#modal p {
+  margin: 7px 0; }
+
+#modal p.infoModal {
+  margin: 7px 0;
+  font-size: 12px; }
+
+#castillaLeon {
+  fill: #CFE9AF;
+  cursor: pointer; }
+
+#castillaLeon path:hover {
+  fill: #8FB265; }
+
+#extremadura {
+  fill: #DBE4A0;
+  cursor: pointer; }
+
+#extremadura path:hover {
+  fill: #8FB265; }
+
+#castillaMancha {
+  fill: #EAEBA3;
+  cursor: pointer; }
+
+#castillaMancha path:hover {
+  fill: #8FB265; }
+
+.selected {
+  fill: #8FB265; }
+
+#aragon {
+  fill: #D2E3BD;
+  cursor: pointer; }
+
+#aragon path:hover {
+  fill: #8FB265; }
+
+text {
+  cursor: pointer; }
+
+#madrid {
+  fill: #C3DEA4; }
+
+@media (min-width: 760px) {
+  #modal {
+    position: absolute;
+    max-width: 320px;
+    background-color: rgba(230, 238, 221, 0.8);
+    border-radius: 10px;
+    overflow: hidden;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transition: all 1s;
+    transition: all 1s; }
+
+  #completeMap {
+    font-size: 8px; } }
 
 /*# sourceMappingURL=index.css.map */

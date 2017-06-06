@@ -21,20 +21,12 @@ body{
   height: 0;
   bottom: 75px;
 }
-.map{
-  display: flex;
-  justify-content: center;
-  padding-bottom: 60px;
-}
-.graphic1{
+
+.graphic{
   width: 90%;
   height: 90%;
 }
-.gatico{
-  // ESTA CLASE SE ELIMINA CON INSERCIÓN DE MAPA DE MARIA
-  width: 90%;
-  height: 90%;
-}
+
 .index-card0{
   width: 95%;
   border: 1px solid $secondary-color;
