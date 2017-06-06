@@ -179,3 +179,27 @@ function getPosition(event){
   }
   return 'left: '+x+'px;'+'top: '+y+'px;';
 }
+// MORE button
+var viewArticle2 = document.getElementById('view-article2');
+var closeArticle2 = document.getElementById('closeArticle2');
+
+viewArticle2.addEventListener('click', function(){
+  document.getElementById('moreArticle2').style.display = 'inline';
+  viewArticle2.style.display ='none';
+});
+closeArticle2.addEventListener('click', function(){
+  document.getElementById('moreArticle2').style.display = 'none';
+  viewArticle2.style.display = 'inline';
+});
+
+var viewArticle3 = document.getElementById('view-article3');
+var closeArticle3 = document.getElementById('closeArticle3');
+
+viewArticle3.addEventListener('click', function(){
+  document.getElementById('moreArticle3').style.display = 'inline';
+  viewArticle3.style.display = 'none';
+});
+closeArticle3.addEventListener('click', function(){
+  document.getElementById('moreArticle3').style.display = 'none';
+  viewArticle3.style.display = 'inline';
+});

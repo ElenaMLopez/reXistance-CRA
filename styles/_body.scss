@@ -34,6 +34,9 @@ body{
 .secondariesArticles{
   width: 100%;
 }
+.secondariArticle-p-non-display, .thirthArticle-p-non-display{
+  display: none;
+}
 
 .index-card0, .secondariesArticles{
   display: flex;
@@ -68,6 +71,16 @@ body{
   // padding-top: 10px;
   // padding-bottom: 10px;
   margin: 0;
+}
+.more-button{
+  background: transparent;
+  border:0;
+  padding: 10px;
+  outline: none;
+  color: $secondary-color;
+  font-size: 1.2em;
+  cursor: pointer;
+
 }
 
 @media (min-width : 760px) {
