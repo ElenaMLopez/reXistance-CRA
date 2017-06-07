@@ -21,21 +21,26 @@ body{
   height: 0;
   bottom: 75px;
 }
-
-.graphic{
+.map{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.graphic1{
   width: 90%;
   height: 90%;
 }
-
+.gatico{
+  // ESTA CLASE SE ELIMINA CON INSERCIÓN DE MAPA DE MARIA
+  width: 90%;
+  height: 90%;
+}
 .index-card0{
   width: 95%;
   border: 1px solid $secondary-color;
 }
 .secondariesArticles{
   width: 100%;
-}
-.secondariArticle-p-non-display, .thirthArticle-p-non-display{
-  display: none;
 }
 
 .index-card0, .secondariesArticles{
@@ -48,8 +53,6 @@ body{
   text-align: center;
   background-color: $secondary-color;
   color: $letter-color;
-  padding: 20px;
-  margin-bottom: 20px;
 }
 
 .article{
@@ -68,18 +71,9 @@ body{
   color: $secondary-color;
 }
 .article-title{
-  // padding-top: 10px;
-  // padding-bottom: 10px;
-  margin: 0;
-}
-.more-button{
-  background: transparent;
-  border:0;
-  padding: 10px;
-  outline: none;
-  color: $secondary-color;
-  font-size: 1.2em;
-  cursor: pointer;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 0;
 }
 
 @media (min-width : 760px) {
@@ -108,5 +102,4 @@ body{
   .index-card{
     width: 45%;
   }
-
 }

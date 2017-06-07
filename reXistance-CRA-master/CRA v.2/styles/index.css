@@ -27,7 +27,20 @@ body {
   height: 0;
   bottom: 75px; }
 
-.graphic {
+.map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px; }
+
+.graphic1 {
+  width: 90%;
+  height: 90%; }
+
+.gatico {
   width: 90%;
   height: 90%; }
 
@@ -37,9 +50,6 @@ body {
 
 .secondariesArticles {
   width: 100%; }
-
-.secondariArticle-p-non-display, .thirthArticle-p-non-display {
-  display: none; }
 
 .index-card0, .secondariesArticles {
   display: -webkit-box;
@@ -57,9 +67,7 @@ body {
 .index-card-top0, .index-card-top {
   text-align: center;
   background-color: #44582c;
-  color: white;
-  padding: 20px;
-  margin-bottom: 20px; }
+  color: white; }
 
 .article {
   padding: 10px 45px 10px 45px; }
@@ -76,16 +84,9 @@ body {
   color: #44582c; }
 
 .article-title {
-  margin: 0; }
-
-.more-button {
-  background: transparent;
-  border: 0;
-  padding: 10px;
-  outline: none;
-  color: #44582c;
-  font-size: 1.2em;
-  cursor: pointer; }
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 0; }
 
 @media (min-width: 760px) {
   .container {
@@ -217,9 +218,6 @@ body {
 .hide {
   display: none; }
 
-ul li:hover a {
-  background: #44582c; }
-
 @media (min-width: 760px) {
   .header {
     position: relative;
@@ -260,6 +258,7 @@ ul li:hover a {
   .nav {
     position: fixed;
     right: 3px;
+    top: 220px;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -270,193 +269,10 @@ ul li:hover a {
     list-style: none;
     background-color: #8fb265;
     margin: 0;
-    padding: 20px; } }
-footer {
-  width: 100%;
-  padding: 2px 20px;
-  font-size: 12px;
-  background-color: #8FB265;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: auto; }
+    padding: 20px; }
 
-.containerIconsTeam {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%; }
-
-.footercopy {
-  text-align: center; }
-
-.iconos {
-  width: 50px;
-  padding-right: 15px;
-  padding-top: 20px;
-  padding-bottom: 15px; }
-
-.collaborators {
-  width: 100%;
-  padding: 15px;
-  margin-top: 20px;
-  border-radius: 49px;
-  background-color: #a6e2ac;
-  opacity: 0.5;
-  text-align: left;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  text-decoration: none; }
-
-a {
-  color: #021402;
-  text-decoration: none; }
-
-a:link {
-  text-decoration: none; }
-
-a:hover {
-  color: white; }
-
-@media (min-width: 760px) {
-  footer {
-    font-size: 15px; }
-
-  .iconos {
-    width: 60px; } }
-#modal.hide {
-  display: none; }
-
-#modal.animationModal {
-  -webkit-transform: scale(1);
-          transform: scale(1); }
-
-.closeModal {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  width: 15px;
-  height: auto;
-  cursor: pointer; }
-
-.map {
-  position: relative; }
-
-#completeMap {
-  width: 100%;
-  height: auto;
-  font-size: 11px; }
-
-#modal {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  height: auto;
-  background-color: #e6eedd;
-  position: relative; }
-
-#modal .containerImageChild {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 25%;
-          flex: 0 0 25%;
-  height: auto;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-  max-width: 150px;
-  margin-top: 10px; }
-
-#modal .containerImageChild .child {
-  width: 100%;
-  height: auto; }
-
-#modal .information {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 75%;
-          flex: 0 0 75%;
-  height: auto;
-  padding-right: 20px;
-  padding-bottom: 20px; }
-
-#modal h2 {
-  text-transform: capitalize;
-  margin-bottom: 7px; }
-
-#modal p {
-  margin: 7px 0; }
-
-#modal p.infoModal {
-  margin: 7px 0;
-  font-size: 12px; }
-
-#castillaLeon {
-  fill: #CFE9AF;
-  cursor: pointer; }
-
-#castillaLeon path:hover {
-  fill: #8fb265; }
-
-#extremadura {
-  fill: #DBE4A0;
-  cursor: pointer; }
-
-#extremadura path:hover {
-  fill: #8fb265; }
-
-#castillaMancha {
-  fill: #EAEBA3;
-  cursor: pointer; }
-
-#castillaMancha path:hover {
-  fill: #8fb265; }
-
-.selected {
-  fill: #8fb265; }
-
-#aragon {
-  fill: #D2E3BD;
-  cursor: pointer; }
-
-#aragon path:hover {
-  fill: #8fb265; }
-
-text {
-  cursor: pointer; }
-
-#madrid {
-  fill: #C3DEA4; }
-
-@media (min-width: 760px) {
-  #modal {
-    position: absolute;
-    max-width: 320px;
-    background-color: rgba(230, 238, 221, 0.8);
-    border-radius: 10px;
-    overflow: hidden;
-    -webkit-transform: scale(0);
-            transform: scale(0);
-    -webkit-transition: all 1s;
-    transition: all 1s; }
-
-  #completeMap {
-    font-size: 8px; } }
+  ul li:hover a {
+    background: #44582c;
+    color: black; } }
 
 /*# sourceMappingURL=index.css.map */
