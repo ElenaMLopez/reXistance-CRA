@@ -75,8 +75,9 @@ body {
   text-decoration: none;
   color: #44582c; }
 
-.article-title {
-  margin: 0; }
+.saveFooter {
+  height: 400px;
+  background-color: transparent; }
 
 .more-button {
   background: transparent;
@@ -88,6 +89,10 @@ body {
   cursor: pointer; }
 
 @media (min-width: 760px) {
+  .saveFooter {
+    height: 400px;
+    background-color: transparent; }
+
   .container {
     position: relative;
     top: 0;
@@ -276,7 +281,8 @@ footer {
   width: 100%;
   bottom: 0px;
   padding: 40px;
-  background-color: #8FB265; }
+  background-color: #8FB265;
+  height: auto; }
 
 .footercopy {
   text-align: center; }
