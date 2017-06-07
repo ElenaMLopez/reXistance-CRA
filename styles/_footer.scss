@@ -1,48 +1,59 @@
 footer{
-  width: 100% ;
-  bottom: 0px;
-  padding: 40px;
-  background-color: #8FB265 ;
-
+  width: 100%;
+  padding: 2px 20px;
+  font-size: 12px;
+  background-color: #8FB265;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+.containerIconsTeam{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
 .footercopy{
- text-align: center;
- }
+  text-align: center;
+}
+
 .iconos{
-  width: 60px;
+  width: 50px;
   padding-right: 15px;
   padding-top: 20px;
   padding-bottom: 15px;
-
 }
 
-.colaboradores{
-  border-radius: 49px 49px 49px 49px;
-  -webkit-border-radius: 49px 49px 49px 49px;
-  border: 0px solid #000000 ;
-   padding-top: 20px;
+.collaborators{
+  width: 100%;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 49px;
   background-color: rgb(166, 226, 172); opacity: 0.5;
-  text-align: center;
+  text-align: left;
   display: flex;
+  justify-content: space-around;
   text-decoration: none;
-
 }
 
-.equipo{
-  width: 50%;
-
-}
-.agradecimientos{
-  width: 40%;
-
-}
 a{
-  color: rgb(2, 20, 2); text-decoration: none
+  color: rgb(2, 20, 2);
+  text-decoration: none
 }
 a:link{
   text-decoration: none;
 }
 a:hover{
-  color: white; text-decoration: underline;
+  color: white;
+}
+
+@media (min-width: 760px){
+  footer{
+  font-size: 15px;
+  }
+  .iconos{
+    width: 60px;
+  }
+
 }

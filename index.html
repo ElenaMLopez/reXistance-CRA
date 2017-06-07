@@ -24,7 +24,7 @@
       <li class="nav-small-item "><a class='nav-small-link' href="#linkArticlePpal">Artículo 1</a></li>
       <li class="nav-small-item"><a class='nav-small-link' href="#linkArticleSecond">Artículo 2</a></li>
       <li class="nav-small-item"><a class='nav-small-link' href="#linkArticleThird">Artículo 3</a></li>
-      <li class="nav-small-item"><a class='nav-small-link' href="#">Contacto</a></li>
+      <li class="nav-small-item"><a class='nav-small-link' href="#linkFooter">Contacto</a></li>
     </ul>
   </header>
   <div class="main-container">
@@ -604,7 +604,7 @@
                 <br>
                 <button id="closeArticle2" class="more-button" type="button" name="button"><strong>CLOSE</strong></button>
               </p>
-<!---   cambiar a boton el more  -->
+
               <p><button id="view-article2" class="more-button" type="button" name="button"><strong>MORE...</strong></button></p>
             </div>
           </article>
@@ -641,8 +641,8 @@
 
       </div>
     </div>
-    <div class="column-transparent">
-      <ul class="nav">
+    <div id="js-column-transparent" class="column-transparent">
+      <ul class="nav" id="js-nav">
         <li><a class='nav-small-link' href="#">¿Quiénes somos?</a></li>
         <li><a class='nav-small-link' href="#linkArticlePpal">Artículo 1</a></li>
         <li><a class='nav-small-link' href="#linkArticleSecond">Artículo 2</a></li>
@@ -651,19 +651,13 @@
       </ul>
     </div>
   </div>
-  <footer>
-    <div  id="linkFooter" class="blank">
-    </div>
-      <p><strong>¡CONTACTA CON NOSOTROS!</strong></p>
 
-      <a href="#"><img class="iconos" src="images/mail.png" alt="logo del correo"></a>
-       <a href="#"><img class="iconos" src="images/facebook.png" alt="logo de facebook"></a>
-       <a href="#"><img class="iconos" src="images/twitter.png" alt="logo de twitter"></a>
-       <a href="#"><img class="iconos" src="images/instagram.png" alt="logo de twitter"></a>
-       <a href="#"><img class="iconos" src="images/youtube.png" alt="logo de twitter"></a>
+  <footer id="js-footer">
+    <div class="containerIconsTeam">
 
-      <div class="colaboradores">
-           <div class="equipo">
+
+      <div class="collaborators">
+           <div class="">
               <p><strong>EQUIPO</strong></p>
               <p><a href="https://twitter.com/">María</a> Diseño</p>
               <p><a href="https://twitter.com/">Paloma</a> Diseño</p>
@@ -673,14 +667,25 @@
 
            </div>
 
-         <div class="agradecimientos">
+         <div class="">
             <p><strong>AGRADECIMIENTOS Y COLABORACIÓN</strong></p>
                 <p><a href="http://adalab.es/">ADALAB</a></p>
                 <p><a href="#">C.E.I.P Gredos</a></p>
                 <p><a href="#">Asociación de escuelas públicas</a></p>
              </div>
+</div>
+
+<div class="containerIcons">
+  <a href="#"><img class="iconos" src="images/mail.png" alt="logo del correo"></a>
+   <a href="#"><img class="iconos" src="images/facebook.png" alt="logo de facebook"></a>
+   <a href="#"><img class="iconos" src="images/twitter.png" alt="logo de twitter"></a>
+   <a href="#"><img class="iconos" src="images/instagram.png" alt="logo de twitter"></a>
+   <a href="#"><img class="iconos" src="images/youtube.png" alt="logo de twitter"></a>
+</div>
           </div>
-          <p class="footercopy"> &copy2017 </p>
+
+          <p id="linkFooter" class="footercopy"> &copy2017 </p>
+
     </footer>
   <script type="text/javascript" src="main.js"></script>
 
